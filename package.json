@@ -1,0 +1,29 @@
+{
+  "name": "vanilla-webcomponent-testing-starter",
+  "version": "0.5.0",
+  "description": "Starter project for vanilla web components with typescript and karma",
+  "main": "index.js",
+  "repository": "git@github.com:johncrim/vanilla-webcomponent-testing.git",
+  "author": "John Crim <johncrim@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "tslib": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^4.3.0",
+    "karma": "^6.4.0",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-jasmine": "^5.1.0",
+    "karma-jasmine-html-reporter": "^2.0.0",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-typescript": "^5.5.3",
+    "typescript": "^4.8.2"
+  },
+  "scripts": {
+    "tsc:dist": "tsc -p ./tsconfig.dist.json",
+    "test:headless": "yarn karma start karma.conf.cjs --browsers ChromeHeadless --single-run",
+    "test:watch": "yarn karma start karma.conf.cjs",
+    "ci": "yarn test:headless && yarn tsc:dist"
+  }
+}

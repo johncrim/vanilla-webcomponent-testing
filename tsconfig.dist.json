@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "buildOptions": {
+    "incremental": true
+  },
+  "exclude": [
+    "src/**.karma-spec.ts",
+    "test"
+  ]
+}
