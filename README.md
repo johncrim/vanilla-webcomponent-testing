@@ -1,6 +1,8 @@
-# vanilla-webcomponent-testing
+# vanilla-webcomponent-testing-starter
 
 Starter project / example for developing vanilla web components with typescript and karma for testing.
+
+"Vanilla web components" means no framework or dependencies used to create the web components.
 
 Features:
 
